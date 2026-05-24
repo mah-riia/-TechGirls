@@ -1,0 +1,105 @@
+/* ==========================================
+   1. SELETOR UNIVERSAL (Opcional)
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   2. SELETORES POR ELEMENTO
+   ========================================== */
+body {
+    /* Cores com contraste adequado (Fundo claro, texto escuro) */
+    background-color: #f4f7f6; 
+    color: #333333;
+    
+    /* Fonte Padrão 1 (Local/Generica do sistema) */
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #1a365d; /* Azul escuro */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #e2e8f0;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #2b6cb0;
+    margin-bottom: 10px;
+    /* Ao menos 1 decoração de texto */
+    text-decoration: underline dashed #2b6cb0; 
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* ==========================================
+   3. SELETOR POR ID
+   ========================================== */
+#nome-principal {
+    /* Fonte 2 (Fonte Externa importada do Google Fonts) */
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2.5rem;
+    /* Opção de estilo à fonte 1: Negrito */
+    font-weight: 700; 
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   4. SELETOR POR CLASSE
+   ========================================== */
+.texto-destaque {
+    /* Opção de estilo à fonte 2: Itálico */
+    font-style: italic; 
+    color: #4a5568;
+    font-size: 1.1rem;
+}
+
+/* ==========================================
+   5. SELETOR POR ATRIBUTO
+   ========================================== */
+img[data-tipo="ods-imagem"] {
+    border: 4px solid #e53e3e; /* Borda vermelha para destacar o ODS */
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* ==========================================
+   6. SELETOR POR PSEUDO-CLASSE
+   ========================================== */
+nav a {
+    color: #2b6cb0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Alterar a cor de links ao passar o mouse sobre ele (hover) */
+nav a:hover {
+    color: #e53e3e; /* Muda de azul para vermelho ao passar o mouse */
+    text-decoration: underline;
+}
+
+#contato a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
